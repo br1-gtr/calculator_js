@@ -1,0 +1,187 @@
+.keyClear {
+  grid-area: clearK; }
+
+.keyDiv {
+  grid-area: divK; }
+
+.keyMult {
+  grid-area: multK; }
+
+.keyMin {
+  grid-area: minK; }
+
+.key-7 {
+  grid-area: key7; }
+
+.key-8 {
+  grid-area: key8; }
+
+.key-9 {
+  grid-area: key9; }
+
+.keyAdd {
+  grid-area: addK; }
+
+.key-4 {
+  grid-area: key4; }
+
+.key-5 {
+  grid-area: key5; }
+
+.key-6 {
+  grid-area: key6; }
+
+.key-1 {
+  grid-area: key1; }
+
+.key-2 {
+  grid-area: key2; }
+
+.key-3 {
+  grid-area: key3; }
+
+.keyEqual {
+  grid-area: equal; }
+
+.key-0 {
+  grid-area: key0; }
+
+.keyDot {
+  grid-area: keyDot; }
+
+.keyEqual {
+  grid-area: equal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif !important; }
+
+body #container {
+  height: 100vh;
+  background: black;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.986432) 0%, #c67efc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.calculator {
+  width: 30%;
+  min-width: 380px;
+  width: 420px;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  box-shadow: 18px 18px 15px rgba(0, 0, 0, 0.322); }
+  .calculator .display {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-right: 6px;
+    text-align: right;
+    border-radius: 20px;
+    border: 1.5px solid black; }
+    .calculator .display .display-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 3px 0 0 3px; }
+      .calculator .display .display-top .btn-mode {
+        position: relative;
+        width: 55px;
+        border-radius: 35%;
+        border-style: none;
+        background-color: rgba(240, 248, 255, 0.493); }
+        .calculator .display .display-top .btn-mode:hover {
+          background-color: rgba(240, 248, 255, 0.212); }
+      .calculator .display .display-top .display-op {
+        height: 39px;
+        width: 20px;
+        padding: 1px 5px;
+        font-size: 29px;
+        border-radius: 20px 0 20px 0;
+        background-color: rgba(240, 248, 255, 0.493); }
+    .calculator .display-log {
+      font-size: 50px;
+      width: 100%; }
+
+.keys {
+  display: grid;
+  grid-template-areas: 'clearK divK multK minK' 'key7 key8 key9 addK' 'key4 key5 key6 addK' 'key1 key2 key3 equal' 'key0 key0 keyDot equal';
+  margin-top: 10px; }
+  .keys .btn {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 1.5px;
+    font-size: 45px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    transition: 200ms; }
+
+.dark-mode .calculator {
+  background-color: #2A2438; }
+  .dark-mode .calculator .display {
+    background-color: #949af159; }
+  .dark-mode .calculator .keys .btn {
+    color: white;
+    background-color: #352F44; }
+    .dark-mode .calculator .keys .btn:hover {
+      background-color: #4a4752a9; }
+  .dark-mode .calculator .keys .keyEqual {
+    background-color: #310A5D; }
+    .dark-mode .calculator .keys .keyEqual:hover {
+      background-color: #592395; }
+  .dark-mode .calculator .keys .keyClear {
+    background-color: #310A5D; }
+    .dark-mode .calculator .keys .keyClear:hover {
+      background-color: #592395; }
+  .dark-mode .calculator .keys .keyDiv, .dark-mode .calculator .keys .keyMult, .dark-mode .calculator .keys .keyMin, .dark-mode .calculator .keys .keyAdd, .dark-mode .calculator .keys .keyDot {
+    background-color: #411E8F; }
+    .dark-mode .calculator .keys .keyDiv:hover, .dark-mode .calculator .keys .keyMult:hover, .dark-mode .calculator .keys .keyMin:hover, .dark-mode .calculator .keys .keyAdd:hover, .dark-mode .calculator .keys .keyDot:hover {
+      background-color: #7254b4; }
+
+.light-mode .calculator {
+  background-color: #dedce0; }
+  .light-mode .calculator .display {
+    background-color: #949af159; }
+  .light-mode .calculator .keys .btn {
+    color: #352F44; }
+    .light-mode .calculator .keys .btn:hover {
+      background-color: #4a4752a9; }
+  .light-mode .calculator .keys .keyEqual {
+    color: #310A5D; }
+    .light-mode .calculator .keys .keyEqual:hover {
+      background-color: #592395; }
+  .light-mode .calculator .keys .keyClear {
+    color: #310A5D; }
+    .light-mode .calculator .keys .keyClear:hover {
+      background-color: #592395; }
+  .light-mode .calculator .keys .keyDiv, .light-mode .calculator .keys .keyMult, .light-mode .calculator .keys .keyMin, .light-mode .calculator .keys .keyAdd, .light-mode .calculator .keys .keyDot {
+    color: #411E8F; }
+    .light-mode .calculator .keys .keyDiv:hover, .light-mode .calculator .keys .keyMult:hover, .light-mode .calculator .keys .keyMin:hover, .light-mode .calculator .keys .keyAdd:hover, .light-mode .calculator .keys .keyDot:hover {
+      background-color: #7254b4; }
+
+@media screen and (max-width: 576px) {
+  body #container {
+    height: 100vh; }
+  .calculator {
+    min-width: 340px;
+    width: 340px;
+    height: 630px; }
+    .calculator .display .display-top .btn-mode {
+      width: 45px; }
+    .calculator .display .display-top .display-op {
+      height: 39px;
+      width: 20px;
+      padding: 1px 5px;
+      font-size: 29px; }
+    .calculator .display-log {
+      font-size: 45px;
+      width: 100%; }
+  .keys {
+    height: 82%;
+    grid-template-areas: 'clearK divK multK minK' 'key7 key8 key9 addK' 'key4 key5 key6 addK' 'key1 key2 key3 equal' 'key0 key0 keyDot equal'; }
+    .keys .btn {
+      width: auto; } }

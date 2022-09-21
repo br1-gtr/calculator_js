@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;500;600&family=Orbitron:wght@700&family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <title>Calculator_JS</title>
+</head>
+<body>
+    
+    <div class="dark-mode" id="container"> 
+
+    <main class="calculator">
+        <div class="display">
+          <div class="display-top">
+            <div class="display-op" id="displayOp"></div>
+            <button class="btn btn-mode" id="modeSwitch">Light Mode</button>
+          </div>
+          <div class="display-log" id="display">0</div>
+        </div>    
+        <div class="keys" id="keys">
+            <button class="btn keyClear" data-op="clear">C</button>
+            <button class="btn keyDiv" data-math="div">/</button>
+            <button class="btn keyMult" data-math="mult">X</button>
+            <button class="btn keyMin" data-math="min">-</button>
+
+            <button class="btn key-7" data-num="7">7</button>
+            <button class="btn key-8" data-num="8">8</button>
+            <button class="btn key-9" data-num="9">9</button>
+            <button class="btn keyAdd" data-math="add">+</button>
+
+            <button class="btn key-4" data-num="4">4</button>
+            <button class="btn key-5" data-num="5">5</button>
+            <button class="btn key-6" data-num="6">6</button>
+
+            <button class="btn key-3" data-num="3">3</button>
+            <button class="btn key-2" data-num="2">2</button>
+            <button class="btn key-1" data-num="1">1</button>
+            <button class="btn keyEqual" data-op="equal">=</button>
+
+            <button class="btn key-0" data-num="0">0</button>
+            <button class="btn keyDot" data-num=".">.</button>
+        </div>
+    </main>
+    </div>
+    <script src="./js/mode.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
